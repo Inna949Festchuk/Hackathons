@@ -8,7 +8,7 @@ from fake_headers import Headers
 
 from bs4 import BeautifulSoup
 from fake_headers import Headers
-from tqdm import tqdm
+
 
 # ПАРСИМ СТРАНИЧКУ ГУГЛПЕРЕВОДЧИКА (не доднлано)
 
