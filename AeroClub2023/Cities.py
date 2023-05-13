@@ -1,13 +1,16 @@
+from tqdm import tqdm
+import psycopg2
+
 import csv
-import translators as tr
-import requests
+# import translators as tr
+# import requests
 
 from pprint import pprint
-from tqdm import tqdm
-from fake_headers import Headers
+# from tqdm import tqdm
+# from fake_headers import Headers
 
-from bs4 import BeautifulSoup
-from fake_headers import Headers
+# from bs4 import BeautifulSoup
+# from fake_headers import Headers
 
 
 # ПАРСИМ СТРАНИЧКУ ГУГЛПЕРЕВОДЧИКА (не доднлано)
@@ -43,20 +46,21 @@ from fake_headers import Headers
 # # result = tr.translate_text(trans_values, translator='yandex', from_language='auto', to_language='ru')
 # # print(result)
 
-out_list = []
-with open ("in_dataset/_cities.csv", "r", encoding = "utf-8") as in_data:
-    in_cities = csv.DictReader(in_data, delimiter = ";")
-    for citi in tqdm(in_cities):
-        result_ru = tr.translate_text(citi.get('title_ru'), translator='yandex', from_language='auto', to_language='ru') 
-        result_en = tr.translate_text(citi.get('title_ru'), translator='yandex', from_language='auto', to_language='en')
-        out_list.append([citi.get('title_ru'), result_ru, result_en])
-        # pprint(out_list) 
+# ПЕРЕВОДЧИК
+# out_list = []
+# with open ("in_dataset/_cities.csv", "r", encoding = "utf-8") as in_data:
+#     in_cities = csv.DictReader(in_data, delimiter = ";")
+#     for citi in tqdm(in_cities):
+#         result_ru = tr.translate_text(citi.get('title_ru'), translator='yandex', from_language='auto', to_language='ru') 
+#         result_en = tr.translate_text(citi.get('title_ru'), translator='yandex', from_language='auto', to_language='en')
+#         out_list.append([citi.get('title_ru'), result_ru, result_en])
+#         # pprint(out_list) 
 
-with open ("out_cities.csv", "w", encoding = "utf-8") as out_data:
-    writer = csv.writer(out_data, delimiter=';', quoting=csv.QUOTE_ALL)
-    writer.writerows(out_list)
+# with open ("out_cities.csv", "w", encoding = "utf-8") as out_data:
+#     writer = csv.writer(out_data, delimiter=';', quoting=csv.QUOTE_ALL)
+#     writer.writerows(out_list)
 
-pprint("ok!")
+# pprint("ok!")
 
 ## - - - - - - - 
 # out_list = []
@@ -71,3 +75,5 @@ pprint("ok!")
 #     writer.writerows(out_list)
 
 # pprint("ok!")
+
+
