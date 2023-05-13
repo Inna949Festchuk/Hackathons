@@ -30,11 +30,6 @@ def insert_db():
     with conn.cursor() as cursor:
 
         try:
-
-            # data = [('1', 'John', '25'), ('2', 'Jane', '30'), ('3', 'Bob', '40')]
-            # # Использовать цикл for для добавления данных в таблицу:
-            # for item in data:
-            #     cursor.execute('INSERT INTO example_table VALUES (?, ?, ?)', item)
         
             for el in tqdm(iterated_cities()):
 
@@ -57,7 +52,8 @@ def insert_db():
             None
 
 def select_db():
-    '''Функция обработки запроса для выборки из таблиц базы данных
+    '''Функция обработки запроса для выборки из таблиц базы данных и 
+    сохранения результатов в .csv файл
     '''
     
     conn = psycopg2.connect(database='Cities', user='postgres', password='Atoer949', host='localhost', port='5432')
@@ -89,7 +85,7 @@ def select_db():
             None
 
 def main():
-    # insert_db()
+    insert_db()
     select_db()
 
 if __name__ == '__main__':
