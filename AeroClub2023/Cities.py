@@ -1,11 +1,13 @@
-from tqdm import tqdm
-import psycopg2
+'''ЭТО НЕ СМОТРЕТЬ ЭТО ПОМЕТКИ'''
 
-import csv
+# from tqdm import tqdm
+# import psycopg2
+
+# import csv
 # import translators as tr
 # import requests
 
-from pprint import pprint
+# from pprint import pprint
 # from tqdm import tqdm
 # from fake_headers import Headers
 
