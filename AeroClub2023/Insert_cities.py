@@ -13,13 +13,15 @@ def iterated_cities():
     ее выполнение и возобновлять при следующем запросе с места останова'''
 	
     with open ("in_dataset/_cities.csv", "r", encoding = "utf-8") as in_data:
-	in_cities = csv.reader(in_data, delimiter = ";")
+        in_cities = csv.reader(in_data, delimiter = ";")
         iter_list = itertools.islice(in_cities, 1, None) # Итерируем начиная с первой строки
         
         while True:
             
             try:
+                
                 new_list = next(iter_list) 
+            
             except StopIteration:
                 break
             
@@ -31,13 +33,12 @@ def insert_db():
     conn = psycopg2.connect(database='Cities', user='postgres', password='Atoer949', host='localhost', port='5432')
 
     with conn.cursor() as cursor:
-
-        try:
         
+        try:
+            
             for el in tqdm(iterated_cities()):
-
                 if el[3] == '':
-                    el[3] = int()
+                    el[3] = int() # Так как поле el[3] d БД integres, а в исходниках встречается строка ''
                  
                 cursor.execute("""INSERT INTO _cities VALUES (%s, %s, %s, %s, %s, %s,
                                                             %s, %s, %s, %s, %s, %s,
