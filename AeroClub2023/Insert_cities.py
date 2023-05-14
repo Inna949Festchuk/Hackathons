@@ -39,7 +39,7 @@ def insert_db():
             
             for el in tqdm(iterated_cities()):
                 if el[3] == '':
-                    el[3] = int() # Так как поле el[3] d БД integres, а в исходниках встречается строка ''
+                    el[3] = int() # Так как поле el[3] в БД integres, а в исходниках встречается строка ''
                  
                 cursor.execute("""INSERT INTO _cities VALUES (%s, %s, %s, %s, %s, %s,
                                                             %s, %s, %s, %s, %s, %s,
