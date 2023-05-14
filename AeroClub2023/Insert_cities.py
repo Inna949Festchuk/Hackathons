@@ -7,9 +7,13 @@ from tqdm import tqdm
 from pprint import pprint
 
 def iterated_cities():
+    '''Функция-генератор отдающая построчно значения функции insert_db()
+    когда та запросит. Оператор yield призван на завершать выполнение
+    функции после отдачи значения строки, как это делал бы return, а приостанавливать 
+    ее выполнение и возобновлять при следующем запросе с места останова'''
+	
     with open ("in_dataset/_cities.csv", "r", encoding = "utf-8") as in_data:
-
-        in_cities = csv.reader(in_data, delimiter = ";")
+	in_cities = csv.reader(in_data, delimiter = ";")
         iter_list = itertools.islice(in_cities, 1, None) # Итерируем начиная с первой строки
         
         while True:
@@ -22,8 +26,7 @@ def iterated_cities():
             yield new_list
         
 def insert_db():
-    '''Функция обработки запроса для заполнения таблицы базы данных
-    '''
+    '''Функция обработки запроса для заполнения таблицы базы данных'''
     
     conn = psycopg2.connect(database='Cities', user='postgres', password='Atoer949', host='localhost', port='5432')
 
@@ -53,8 +56,7 @@ def insert_db():
 
 def select_db():
     '''Функция обработки запроса для выборки из таблиц базы данных и 
-    сохранения результатов в .csv файл
-    '''
+    сохранения результатов в .csv файл'''
     
     conn = psycopg2.connect(database='Cities', user='postgres', password='Atoer949', host='localhost', port='5432')
 
