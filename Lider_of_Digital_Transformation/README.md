@@ -35,6 +35,7 @@
 - [Папка со скринами модели](https://drive.google.com/drive/folders/1wKLD8JYnCt5Apsa_PmsMBZrYbxcYzX_P?usp=share_link)
 - [3D модель Москвы](https://drive.google.com/file/d/1kAgnL4xbFgYYX98OXQ5vcQdGk93X70hH/view?usp=share_link)
 - [terrein поверхность и космоснимок](https://drive.google.com/file/d/14m3l3YuJ9MYJY-_9Mfgk5LSEnhCPb1fV/view?usp=share_link)
+- [Двумерная карта почтальона](https://drive.google.com/file/d/1Fzvj4Xq3RY8ttgEhcEesBlmpp3drfxim/view?usp=share_link)
 
 </details>
 
