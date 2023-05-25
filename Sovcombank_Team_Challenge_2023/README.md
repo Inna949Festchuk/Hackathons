@@ -10,7 +10,7 @@
 
 > ### Мои задачи
 <details>
-None
+- [Черновик схемы бд резюме на сайте поиска работы](https://disk.yandex.ru/d/L3rcCHdttKZbHw)
 </details>
 
 > ### Описание решения
