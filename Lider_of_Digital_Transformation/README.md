@@ -41,7 +41,11 @@
 </details>
 
 > ### Описание решения
-None
+- [Преза на конкурс](https://docs.google.com/presentation/d/1X7NfI5jr3LxaVgdSa_bpkRZpZ6S10bdb/edit?usp=sharing&ouid=105404358521921921823&rtpof=true&sd=true)
+- [Геймплей](https://drive.google.com/file/d/1iaMWhZ34ZrMvxPgEBGiEa7wKCAOw6trl/view?usp=sharing)
+- [Билд](https://drive.google.com/file/d/1TU_h4UP3SSVFnSFefqNiV4Nsst2yQ2pq/view?usp=sharing)
+- [Код](https://github.com/Inna949Festchuk/LCT2023PostmanGameMoscow.git)
+
 
 
 
