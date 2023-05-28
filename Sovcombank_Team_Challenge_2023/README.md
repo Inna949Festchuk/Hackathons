@@ -16,7 +16,8 @@
 </details>
 
 > ### Описание решения
-None
+
+[Решение на GitLab](https://git.codenrock.com/sovcombank-team-challenge-2023/cnrprod-team-29060/recruitment/-/tree/main)
 
 
 
