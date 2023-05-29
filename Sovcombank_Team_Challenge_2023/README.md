@@ -19,5 +19,10 @@
 
 [Решение на GitLab](https://git.codenrock.com/sovcombank-team-challenge-2023/cnrprod-team-29060/recruitment/-/tree/main)
 
+Для доступа к репозиторию, авторизуйтесь в Gitlab по учетным данным, представленным ниже:
+
+Gitlab логин: cnrprod-team-29060
+
+Gitlab пароль: ruft4fEE44vr
 
 
